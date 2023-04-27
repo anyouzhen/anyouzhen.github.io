@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>广西始特伦科技有限公司官网</title>
+    <script src="js/jquery.js"></script>
+    <script src="static/js/prefixfree.min.js"></script>
+
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html,
+    body,
+    img {
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-family: '微软雅黑';
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+    }
+
+    body {
+        width: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        background-image: url(./images/1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100vh;
+    }
+
+    a {
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    .Choices_head {
+        width: 100%;
+        float: left;
+        height: 55px;
+        margin-top: 50px;
+        line-height: 55px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        text-align: center;
+        font-size: 48px;
+        color: #FFF;
+        display: block;
+        position: relative;
+    }
+
+    html {
+        height: 100%;
+        background: #94A2BC;
+    }
+
+    nav {
+        max-width: 960px;
+        mask-image: linear-gradient(90deg, rgba(86, 31, 23, 0.619) 0%, #ffffff 25%, #ffffff 75%, rgba(86, 31, 23, 0.619) 100%);
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+
+    nav ul {
+        text-align: center;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.2) 75%, rgba(255, 255, 255, 0) 100%);
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+    }
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    nav ul li a {
+        padding: 18px;
+        font-family: "Open Sans";
+        text-transform: uppercase;
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        text-decoration: none;
+        display: block;
+    }
+
+    nav ul li a:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(0, 35, 122, 0.7);
+    }
+
+    ul.address {
+        margin-top: 2em;
+        border-top: 1px solid #AFAFAF;
+        padding-top: 0.5em;
+    }
+
+    ul.address li {
+        display: block;
+    }
+
+    ul.address li ul.address-text li {
+        display: inline-block;
+        font-size: 1em;
+        color: #fff;
+        margin-top: 1em;
+        font-weight: 400;
+    }
+
+    ul.address li ul.address-text li:nth-child(1) {
+        width: 20%;
+    }
+
+    ul.address li ul.address-text li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    ul.address li ul.address-text li a:hover {
+        color: #00a78e;
+    }
+
+    ul.address-text b {
+        color: #fff;
+    }
+
+    .box {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+        background-color: #3b496657;
+        width: 1200px;
+        height: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background-image: url(./images/2.jpg);
+        background-size: 100%;
+        filter: opacity(0.9);
+    }
+
+    .box img {
+        width: 250px;
+        margin: 70px;
+    }
+
+    .one {
+        height: 85vh;
+    }
+
+    .direction {
+        color: #FFF; 
+        line-height: 50px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+        background-color: #3b4966b9;
+        width: 1200px;
+        height: 500px;
+        margin: 20px auto;
+        padding: 10px;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .service {
+        height: 90vh;
+    }
+
+    .end {
+        height: 100vh;
+        width: 100vw;
+        background-image: url(./images/bg.gif);
+        background-size: 100vw;
+    }
+
+    .end h1 {
+        color: #FFF;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 900;
+        color: white;
+        font-size: 2vw;
+    }
+
+    .font {
+        display: flex;
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        width: 70vw;
+    }
+
+    .purpose {
+        background: #333;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg)
+        }
+    }
+
+    .purpose h1 {
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        font-family: "Amiri", serif;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: white;
+        letter-spacing: .5em;
+        font-size: 2vw;
+        animation: text 1s infinite;
+        mix-blend-mode: screen;
+        text-align: center;
+    }
+
+    .case {
+        width: 100%;
+        height: auto;
+    }
+
+    .case ul {
+        width: 1220px;
+        margin: 0 auto;
+    }
+
+    .case ul li {
+        width: 1220px;
+        display: inline-block;
+        margin: 50px 0;
+    }
+
+    .Choices_left {
+        width: 590px;
+        height: 399px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .Choices_right {
+        width: 630px;
+        height: 399px;
+        float: left;
+        background-color: rgba(201, 122, 122, 0.93);
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+
+    .case .describe {
+        padding: 20px;
+        float: left;
+        display: flex;
+        position: relative;
+        line-height: 30px;
+        color: #464646;
+    }
+
+    .Choices_right h1 {
+        width: 590px;
+        height: 30px;
+        line-height: 30px;
+        float: left;
+        text-align: center;
+        font-size: 28px;
+        margin-top: 30px;
+        color: #464646;
+    }
+
+    .Choices_right h4 {
+        width: 590px;
+        float: left;
+        text-align: center;
+        margin-top: 30px;
+        color: #743a3a;
+    }
+
+    .Choices_right p {
+        width: 450px;
+        height: 70px;
+        float: left;
+        margin-left: 70px;
+        text-align: center;
+        font-size: 18px;
+        color: #606060;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#1">公司简介<br>Company Profile</a>
+            </li>
+            <li>
+                <a href="#2">公司案例<br>Company case</a>
+            </li>
+            <li>
+                <a href="#3">服务方向<br>Service direction</a>
+            </li>
+            <li>
+                <a href="#4">公司宗旨<br>Company purpose</a>
+            </li>
+        </ul>
+
+
+    </nav>
+    <div class="one">
+        <div class="Choices_head" style="margin-bottom: 60px;margin-top: 0;" id="1">公司简介</div>
+        <div class="box">
+            <div class="introduction">
+                <ul class="address">
+
+                    <li>
+                        <ul class="address-text">
+                            <li><b>姓名</b></li>
+                            <li>李舒航</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>职位</b></li>
+                            <li>总经理兼公司联合创始人</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>电话</b></li>
+                            <li>13277752253</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>邮箱</b></li>
+                            <li>642480897@qq.com</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>公司</b></li>
+                            <li>广西始特伦科技有限公司</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>微信账号</b></li>
+                            <li>qwmaile99</li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <ul class="address-text">
+                            <li><b>主要业务</b></li>
+                            <li>新媒体运营、品牌产品公关、网络曝光维护、明星公关、互联网推广营销、
+                                市场营销、品牌营销等。</li>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="img"><img src="./images/wechat.jpg"></div>
+        </div>
+    </div>
+
+    <!-- 公司案例 -->
+    <div style="background-image: url(./images/4.jpg); background-size: 100% auto; ">
+        <div class="Choices_head" id="2" style="margin-top: 80px; margin-bottom: 10px; color: #333;">公司案例</div>
+        <div class="case">
+            <ul>
+                <li>
+                    <div class="Choices_left"><img src="./images/haier.jpg" width="100%" height="399px"></div>
+                    <div class="Choices_right">
+                        <h1>公司：海尔集团</h1>
+                        <h4>工作内容：海尔家居进行全网营销 总投资 200 万</h4>
+                        <div class="describe">
+                            1. 基于消费者洞察，分析标签及数据，搭建服务 SOP 及各团队协同工作流程，对效果进行跟踪及策略优化，完善服
+                            务模式，不断提升客户满意度。<br>
+                            2. 负责移动互联网自媒体平台日常运营及推广工作；例如今日头条、芒果 TV、腾讯视频、微博、百度、知乎等。<br>
+                            3. 收集、研究网络热点话题，结合新媒体特性，对贴吧、小视频、微博、微信等推广内容进行实时调整和更新。
+                        </div>
+                        <h1>Company: Haier Group</h1>
+                        <h4>Work content: Haier Home carries out the whole network marketing with a total investment of
+                            2
+                            million</h4>
+                        <div class="describe">
+                            1. Based on consumer insights, analyze tags and data, build service SOPs and collaborative
+                            workflows of various teams, track the effect and optimize strategies, and improve the
+                            service
+                            Business model, continuously improve customer satisfaction. <br>
+                            2. Responsible for the daily operation and promotion of mobile Internet self-media platform;
+                            For
+                            example, Toutiao, Mango TV, Tencent Video, Weibo, Baidu, Zhihu, etc. <br>
+                            3. Collect and study hot topics on the Internet, combine the characteristics of new media,
+                            and
+                            adjust and update the promotion content such as Tieba , small video, Weibo, WeChat in real
+                            time.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Choices_left"><img src="./images/lianxiang.jpg" width="100%" height="399px"></div>
+                    <div class="Choices_right">
+                        <h1>公司：联想集团</h1>
+                        <h4>工作内容：知乎营销联想电脑 总投资 70 万
+                        </h4>
+                        <div class="describe">
+                            1. 拓展多渠道媒体和行业 kol 资源，维护媒体关系，增进重点媒体与 kol 对品牌的喜好度和粘性。
+                            <br>
+                            2. 负责公司自媒体（公众号等）日常运营管理和每日软文推送，监控的平台数据：营销数据、交易数据、软文阅读、
+                            流量分析等；负责每日更新公司公众号软文及其他自媒体信息，配合公司企宣工作。
+                        </div>
+                        <h1>Company: Lenovo Group</h1>
+                        <h4>Work content: Zhihu marketing Lenovo computer The total investment is 700,000 yuan
+                        </h4>
+                        <div class="describe">
+                            1. Expand multi-channel media and industry KOL resources, maintain media relations, and
+                            enhance
+                            the preference and stickiness of key media and KOL to the brand.
+                            <br>
+                            2. Responsible for the daily operation management and daily soft text push of the company's
+                            self-media (public account, etc.), and monitor the platform data: marketing data,
+                            transaction
+                            data, soft text reading,
+                            traffic analysis, etc.; Responsible for daily updating the company's public account soft
+                            text
+                            and other self-media information, and cooperate with the company's enterprise publicity
+                            work.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Choices_left"><img src="./images/ali.jpg" width="100%" height="399px"></div>
+                    <div class="Choices_right">
+                        <h1>公司：阿里巴巴集团</h1>
+                        <h4>工作内容：宣传、推广、公关阿里巴巴旗下的菜鸟驿站 </h4>
+                        <div class="describe">
+                            1. 负责公司新媒体平台的建设、运营及管理，提升公众号的影响力、活跃度、传播力等，以及各项数据分析。<br>
+                            2. 负责社群组建及运营(包含社群裂变、社群活动策划实施等)，建立裂变、分享机制，促进老用户推广新用户，建立
+                            完善的社群体系，增加用户对平台的粘性。
+                        </div>
+                        <h1>Company: Alibaba Group</h1>
+                        <h4>Job description: publicity, promotion, public relations Alibaba's Cainiao Station </h4>
+                        <div class="describe">
+                            1. Responsible for the construction, operation and management of the company's new media
+                            platform, enhance the influence, activity, communication power of the official account,
+                            etc., as
+                            well as various data analysis. <br>
+                            2. Responsible for community formation and operation (including community fission, community
+                            activity planning and implementation, etc.), establish fission and sharing mechanisms,
+                            promote
+                            old users to promote new users, and establish
+                            Perfect community system to increase user stickiness to the platform.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Choices_left"><img src="./images/tengxun.jpg" width="100%"></div>
+                    <div class="Choices_right">
+                        <h1>公司：腾讯集团</h1>
+                        <h4>工作内容：宣传推广旗下的新款游戏</h4>
+                        <div class="describe">
+                            1. 负责挖掘和分析网友使用习惯、情感及体验感受，及时掌握新闻热点，有效完成专题策划活动。<br>
+                            2. 了解社交化媒体发展趋势，能够结合实时营销动态，优化营销方案。
+                        </div>
+                        <h1>Company: Tencent Group</h1>
+                        <h4>Job description: Promote its new games</h4>
+                        <div class="describe">
+                            1. Responsible for excavating and analyzing the habits, emotions and experience of netizens,
+                            timely grasping news hot spots, and effectively completing special planning activities. <br>
+                            2. Understand the development trend of social media, and be able to optimize marketing plans
+                            in
+                            combination with real-time marketing dynamics.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="Choices_left"><img src="./images/feng.jpg" width="100%"></div>
+                    <div class="Choices_right">
+                        <h1>明星公关：冯提莫</h1>
+                        <h4>工作内容: 打造，维护个人 IP</h4>
+                        <div class="describe">
+                            1. 媒体关系管理：与各种媒体建立稳定的合作关系，包括新闻媒体、娱乐媒体、社交媒体等，及时了解媒体的需求
+                            和趋势，积极协调和安排客户的媒体曝光和报道，传递客户的信息和态度。<br>
+                            2. 社交媒体营销：根据客户的需求和目标，通过各种社交媒体平台，包括微博、微信、抖音等，规划和组织各种宣
+                            传和营销活动，积极推广和营销客户，提升客户在社交媒体上的影响力和粉丝量。
+                        </div>
+                        <h1>Star PR: Feng Timo</h1>
+                        <h4>Job description: Build and maintain personal IP</h4>
+                        <div class="describe">
+                            1. Media relationship management: Establish stable cooperative relations with various media,
+                            including news media, entertainment media, social media, etc., and keep abreast of the needs
+                            of
+                            media
+                            and trends, actively coordinate and arrange customer media exposure and coverage, convey
+                            customer information and attitude. <br>
+                            2. Social media marketing: According to the needs and goals of customers, plan and organize
+                            various publicity through various social media platforms, including Weibo, WeChat, Douyin,
+                            etc
+                            Pass and marketing activities, actively promote and market customers, and increase
+                            customers'
+                            influence and followers on social media.
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="direction1" style="background-image: url(./images/3.jpg); background-size: 100% 100%;">
+        <div class="Choices_head" id="3" style="margin-bottom: 75px;">服务方向</div>
+        <div class="service">
+            <div class="direction">
+                <table class="direction1">
+                    <tr>
+                        <td><b>→ 品牌建设：</b></td>
+                        <td>通过企业画像、VI 设计等方式，构建一个完善可信的品牌形象，让消费者对品牌有更好的认知。</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>→ 媒体关系：</b></td>
+                        <td>与各大媒体建立良好的沟通和合作关系，获取有力的曝光和报道机会，提升品牌知名度和形象。</td>
+                    </tr>
+                    <tr>
+                        <td><b>→ 危机公关：</b></td>
+                        <td>企业面临危机时，通过风险预警、危机处理、声誉修复等方式，最大限度地减轻危机对企业的影响。</td>
+                    </tr>
+                    <tr>
+                        <td><b>→ 社交媒体营销：</b></td>
+                        <td> 通过社交媒体平台，为客户制定相应的营销策略进行营销和广告投放。</td>
+                    </tr>
+                    <tr>
+                        <td><b>→ 产品推广：</b></td>
+                        <td>在客户的需求和市场环境的基础上，为客户设计执行产品推广方案，提高在市场上的销量和知名度。</td>
+                    </tr>
+                    <tr>
+                        <td><b>→ 公益活动：</b></td>
+                        <td> 通过策划组织各类公益活动，增强品牌形象的社会责任感和公益形象，提高企业的社会声誉和美誉度。</td>
+                    </tr>
+                    <tr>
+                        <td><b>→ 海外公关：</b></td>
+                        <td>针对客户在国际领域的需求，设计海外公关方案，拓展全球市场，提高品牌国际化水平和产业竞争力</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- 服务宗旨 -->
+    <div class="purpose" style="background-image: url(./images/bg.gif); background-size: 100% 100%;">
+        <div class="Choices_head" style="position: absolute;" id="4">服务宗旨</div>
+        <h1>为内部公众和对外部公众服务<br>树立客户在公众视野中的形象<br>提升客户知名度和美誉度<br>推动客户在市场的占有率</h1>
+    </div>
+    </div>
+</body>
+
+</html>
